@@ -64,10 +64,10 @@ function mostrarClima (datos) {
   const tempMinC = Math.round(temp_min - 273.15)
   const climaParrafo = document.createElement('p')
   climaParrafo.innerHTML = `
-  Clima en: ${name} </br>
-  Temperatura actual: ${tempC} &#8451; </br>
-  Maxima: ${tempMaxC} &#8451; </br>
-  Minima: ${tempMinC} &#8451; </br>`
+  Weather in: ${name} </br>
+  Temperature: ${tempC} &#8451; </br>
+  Max: ${tempMaxC} &#8451; </br>
+  Min: ${tempMinC} &#8451; </br>`
   climaParrafo.classList.add('font-bold', 'text-center', 'rounded', 'text-white', 'text-2xl', 'parraf')
 
   const resultadoDiv = document.createElement('div')
