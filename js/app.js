@@ -17,7 +17,7 @@ function validarForm () {
   const paisInput = document.querySelector('#pais').value
 
   if(ciudadInput === ''|| paisInput === '') {
-    imprimirAlerta('Ningun campo puede estar vacio')
+    imprimirAlerta('No field can be empty')
     return
   }
   consultarApi(ciudadInput, paisInput)
@@ -49,7 +49,7 @@ function consultarApi (ciudad, pais) {
     .then(data => {
       limpiarHtml()
       if(data.cod === '404'){
-        imprimirAlerta('Esa ciudad no existe')
+        imprimirAlerta('This city do not exist')
         return
       }
       mostrarClima(data)
